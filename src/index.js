@@ -4,12 +4,12 @@ let navMenu = document.querySelector(".navMenu");
 let body = document.querySelector("body");
 
 function toggleNavBar() {
-  if (toggleButton.textContent === "collapse") {
-    toggleButton.textContent = "show";
+  if (toggleButton.textContent === "-") {
+    toggleButton.textContent = "+";
     navMenu.style.display = "none";
     body.style.gridTemplateColumns = "max-content minmax(300px, auto)";
   } else {
-    toggleButton.textContent = "collapse";
+    toggleButton.textContent = "-";
     navMenu.style.display = "block";
     body.style.gridTemplateColumns = "minmax(100px, 300px) minmax(300px, auto)";
   }
