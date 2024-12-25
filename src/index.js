@@ -7,7 +7,7 @@ function toggleNavBar() {
   if (toggleButton.textContent === "-") {
     toggleButton.textContent = "+";
     navMenu.style.display = "none";
-    body.style.gridTemplateColumns = "max-content minmax(300px, auto)";
+    body.style.gridTemplateColumns = "60px minmax(300px, auto)";
   } else {
     toggleButton.textContent = "-";
     navMenu.style.display = "block";
