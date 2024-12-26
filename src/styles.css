@@ -28,7 +28,7 @@ body {
   height: 60px;
   padding: 0 0 0 12px;
   user-select: none;
-  gap: 16px;
+  gap: 24px;
   
   .title {
     display: flex;
@@ -59,39 +59,33 @@ body {
     list-style-type: none;
   }
   .stuff {
-    display: flex;
-    gap:8px;
-
+    >ul {
+      display: flex;
+      gap:8px;
+    }
     >ul li {
       display: inline-block;
       position: relative;
       padding: 10px;
-      background-color: #f2f2f2;
-      margin-right: 10px;
       color:white;
-      background-color: rgb(40, 40, 40);
       border-radius: 4px;
       font-weight: 700;
       padding: 4px;
 
       &:hover {
         cursor: pointer;
-        background-color: rgb(50,50,50);
       }
 
-      .items {
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-      }  
     }
 
     >ul ul {
       display: none;
       position: absolute;
+      white-space: nowrap;
       top: 100%;
       left: 0;
-      background-color: #f9f9f9;
+      background-color: black;
+      box-shadow: rgba(200, 200, 200, 0.54) 0px 3px 8px;
     }
 
     >ul li:hover > ul {
@@ -100,12 +94,13 @@ body {
 
     >ul ul li {
       display: block;
-    }
-
-    >ul li ul li {
       border-radius: 0px;
       width: 100%;
-      padding: 8px;
+      padding:8px 16px;
+
+      &:hover {
+        background-color: rgb(20,20,20);
+      }
     }
   }
 
