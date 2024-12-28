@@ -131,10 +131,14 @@ body {
   align-items: center;
 
   .picFrame {
-    background-color: rgb(71, 92, 110);
-    aspect-ratio: 16/9;
-    min-width: 100px;
-    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      aspect-ratio: 16/9;
+      max-width: 100%;
+    };
   }
 }
 
