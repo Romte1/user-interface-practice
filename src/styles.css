@@ -171,10 +171,23 @@ body {
   justify-content: center;
   align-items: center;
   height:60px;
+  gap:16px;
 
   h1 {
     color: #1aff00;
     
+  }
+}
+
+.githubIcon {
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  font-size: 24px;
+  display: flex;
+
+  > :hover {
+    color: #1aff00;
+    font-size: 24px;
   }
 }
 
